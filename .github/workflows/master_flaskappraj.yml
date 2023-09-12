@@ -29,6 +29,9 @@ jobs:
       
       - name: Install dependencies
         run: pip install -r requirements.txt
+
+      - name: starting web app
+        run: python main.py
         
       # Optional: Add step to run tests here (PyTest, Django test suites, etc.)
       
@@ -62,4 +65,3 @@ jobs:
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_5AB301118F104CE1BDC038B49B834F71 }}
           
-          run: python app.py
