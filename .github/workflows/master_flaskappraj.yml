@@ -61,3 +61,5 @@ jobs:
           app-name: 'flaskappraj'
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_5AB301118F104CE1BDC038B49B834F71 }}
+          
+          run: python app.py
